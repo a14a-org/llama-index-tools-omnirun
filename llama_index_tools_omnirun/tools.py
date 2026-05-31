@@ -32,7 +32,10 @@ class OmniRunToolSpec:
         return self._sandbox
 
     def execute_code(self, code: str) -> str:
-        """Execute Python code in an isolated Firecracker microVM sandbox. Returns stdout and stderr."""
+        """Execute Python code in an isolated Firecracker microVM sandbox.
+
+        Returns combined stdout and stderr.
+        """
         sb = self._get_sandbox()
         result = sb.commands.run(
             f"python3 -c {shlex.quote(code)}", timeout=self.timeout
