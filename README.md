@@ -100,6 +100,19 @@ spec = OmniRunToolSpec(
 
 - `OMNIRUN_API_KEY` - Your OmniRun API key (required)
 
+## Self-hosting
+
+The OmniRun server is open source (Apache-2.0) at [github.com/a14a-org/omnirun](https://github.com/a14a-org/omnirun). This package
+creates sandboxes through the OmniRun Python SDK (import name `omnirun`), which
+reads its endpoint from the environment. To use a self-hosted deployment, set:
+
+- `OMNIRUN_API_URL` - base URL of your OmniRun deployment
+- `OMNIRUN_API_KEY` - an API key issued by that deployment
+
+Set `OMNIRUN_API_URL` explicitly for the hosted service too
+(`https://api.omnirun.io`); the Python SDK's built-in fallback is
+`http://localhost:9090`.
+
 ## Documentation
 
 - [OmniRun docs](https://docs.omnirun.dev)
@@ -107,4 +120,8 @@ spec = OmniRunToolSpec(
 
 ## License
 
-MIT
+[Apache License 2.0](./LICENSE). See [NOTICE](./NOTICE). Contributions require a DCO
+sign-off; see [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+Versions published before the relicense remain available under their original
+MIT license.
