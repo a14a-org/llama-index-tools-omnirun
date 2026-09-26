@@ -7,11 +7,11 @@ name = "llama-index-tools-omnirun"
 version = "0.1.0"
 description = "LlamaIndex tools for OmniRun sandboxes — execute code in isolated Firecracker microVMs"
 readme = "README.md"
-license = "MIT"
+license = "Apache-2.0"
 requires-python = ">=3.10"
 dependencies = [
     "llama-index-core>=0.14.25",
-    "omnirun>=0.6.3",
+    "omnirun-sdk>=0.5.0",
 ]
 
 [project.optional-dependencies]
