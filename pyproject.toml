@@ -10,14 +10,14 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
-    "llama-index-core>=0.14.25",
+    "llama-index-core>=0.14.26",
     "omnirun>=0.6.3",
 ]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=9.2.0",
-    "ruff>=0.17.4",
+    "ruff>=0.17.5",
     "mypy>=2.4.1",
 ]
 
